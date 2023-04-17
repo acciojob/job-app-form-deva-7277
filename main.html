@@ -8,39 +8,58 @@
 
 <body>
 	<form method="post">
+	<div>
 	<label for="name">Name*</label>
 	<input type= "text" id = "name" placeholder="name" required>
+	</div>
 
+	<div>
 	<label for="email">Email*</label>
-	<input type= "email" id = "email" placeholder="email" required>
+	<input type= "email" id = "#email" placeholder="email" required>
+	</div>
 
+	<div>
 	<label for="gender">Gender*</label>
-	<input type= "radio" id = "gender_m" name="gender" required>
-	<label for="gender_m">Male</label>
-	<input type= "radio" id = "gender_f" name="gender" required>
-	<label for="gender_f">Female</label>
+	<input type= "radio" id = "#gender-male" name="gender" value="male" required>
+	<label for="gender-m">Male</label>
+	<input type= "radio" id = "#gender-female" name="gender" value="female" required>
+	<label for="gender-f">Female</label>
+	<input type= "radio" id = "#gender-female" name="gender" value="other" required>
+	<label for="gender-other">Other</label>
+	</div>
 
+	<div>
 	<label for="laptops">Laptop Brands</label>
-	<select id="laptop">
+	<select id="#laptop"  name="laptop">
 		<option value="" disabled selected>--Please choose an option--</option>
 		<option value="apple">Apple</option>
 		<option value="asus">Asus</option>
 		<option value="hp">HP</option>
 	</select>
+	</div>
 
+	<div>
 	<label for="age">Age*</label>
-	<input type="number" id="age" placeholder="age" required>
-
+	<input type="number" id="#age" name="age" required>
+	</div>
+		
+	<div>
 	<label for="dob">DOB*</label>
-	<input type="date" id="dob" placeholder="dob" required>
-
+	<input type="date" id="#dob" name="dob" required>
+	</div>
+		
+	<div>
 	<label for="password">Password*</label>
 	<input type="password" id="password" placeholder="password" required>
-
+	</div>
+		
+	<div>
 	<label for="portfolio">Portfolio</label>
-	<input type="url" id="portfolio" placeholder="portfolio" required>
-
-	<button type="submit">submit</button>
+	<input type="url" id="#portfolio" name="portfolio" required>
+	</div>
+		
+	
+	<button type="submit">Submit</button>
 	</form>
 
 	
